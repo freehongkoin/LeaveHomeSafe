@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="<%= htmlWebpackPlugin.options.title %>" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link href="<%= BASE_URL %>img/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="<%= BASE_URL %>img/splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="<%= BASE_URL %>img/splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="<%= BASE_URL %>img/splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="<%= BASE_URL %>img/splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="<%= BASE_URL %>img/splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="<%= BASE_URL %>img/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="<%= BASE_URL %>img/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="<%= BASE_URL %>img/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="<%= BASE_URL %>img/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <style type="text/css">
+        body {
+            user-select: none;
+            /* supported by Chrome and Opera */
+            -webkit-user-select: none;
+            /* Safari */
+            -khtml-user-select: none;
+            /* Konqueror HTML */
+            -moz-user-select: none;
+            /* Firefox */
+            -ms-user-select: none;
+            /* Internet Explorer/Edge */
+        }
+    </style>
+
+    <!-- Start Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
+        // Single Page Apps for GitHub Pages
+        // MIT License
+        // https://github.com/rafgraph/spa-github-pages
+        // This script checks to see if a redirect is present in the query string,
+        // converts it back into the correct url and adds it to the
+        // browser's history using window.history.replaceState(...),
+        // which won't cause the browser to attempt to load the new url.
+        // When the single page app is loaded further down in this file,
+        // the correct url will be waiting in the browser's history for
+        // the single page app to route accordingly.
+        (function(l) {
+            if (l.search[1] === '/') {
+                var decoded = l.search.slice(1).split('&').map(function(s) {
+                    return s.replace(/~and~/g, '&')
+                }).join('?');
+                window.history.replaceState(null, null,
+                    l.pathname.slice(0, -1) + decoded + l.hash
+                );
+            }
+        }(window.location))
+    </script>
+    <!-- End Single Page Apps for GitHub Pages -->
+</head>
+
+<body>
+    <noscript>
+        <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+                Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+</body>
+
+</html>
